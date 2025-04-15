@@ -2,7 +2,8 @@
 % Imposta il percorso del tuo file Excel
 clear all
 n = 30;
-nomeFile = "C:\Users\sandra\PC\Desktop\Tesi_Omento\nba_schedule22-23.xlsx";
+baseFolder = fileparts(mfilename('fullpath'));
+nomeFile = fullfile(baseFolder, 'dataset', 'nba_schedule23-24.xlsx');
 
 % Imposta la data di inizio
 dataInizio = datenum('Tue, Oct 18, 2022', 'ddd, mmm dd, yyyy');
